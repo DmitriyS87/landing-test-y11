@@ -14,12 +14,6 @@ const global = yaml.load(fs.readFileSync('src/data/global.yml', 'utf8'));
 
 module.exports = (config) => {
 	// Collections
-
-	const collections = {
-		// articles: 'src/articles/*/index.md',
-		// pages: 'src/pages/!(404)/index.njk',
-	};
-
 	// Markdown
 
 	config.addFilter('markdown', (value) => {
