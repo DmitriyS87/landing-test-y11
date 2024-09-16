@@ -1,5 +1,5 @@
 const dom = require('linkedom');
-const esbuild = require('esbuild');
+// const esbuild = require('esbuild');
 const fs = require('fs');
 const highlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const htmlMin = require('html-minifier-terser');
@@ -17,19 +17,8 @@ module.exports = (config) => {
 
 	const collections = {
 		// articles: 'src/articles/*/index.md',
-		pages: 'src/pages/!(404)/index.njk',
+		// pages: 'src/pages/!(404)/index.njk',
 	};
-
-	// config.addCollection('articles', (collectionApi) => {
-	// 	return collectionApi.getFilteredByGlob(collections.articles);
-	// });
-
-	// config.addCollection('sitemap', (collectionApi) => {
-	// 	return collectionApi.getFilteredByGlob([
-	// 		collections.articles,
-	// 		collections.pages,
-	// 	]);
-	// });
 
 	// Markdown
 
@@ -63,21 +52,10 @@ module.exports = (config) => {
 		return content;
 	});
 
-	// const htmlTransforms = [
-	// 	require('./src/transforms/anchors.js'),
-	// 	require('./src/transforms/demos.js'),
-	// 	require('./src/transforms/figure.js'),
-	// 	require('./src/transforms/images.js'),
-	// 	require('./src/transforms/prism.js'),
-	// ];
 
 	config.addTransform('html-transform', async (content, path) => {
 		if (path && path.endsWith('.html')) {
 			const window = dom.parseHTML(content);
-
-			// for (const transform of htmlTransforms) {
-			// 	await transform(window, content, path);
-			// }
 
 			return window.document.toString();
 		}
@@ -128,31 +106,6 @@ module.exports = (config) => {
 		return code;
 	});
 
-	// JavaScript
-
-	// config.addTemplateFormats('js');
-
-	// config.addExtension('js', {
-	// 	outputFileExtension: 'js',
-	// 	compile: async (content, path) => {
-	// 		if (path !== './src/scripts/index.js') {
-	// 			return;
-	// 		}
-
-	// 		return async () => {
-	// 			let { outputFiles } = await esbuild.build({
-	// 				target: 'es2020',
-	// 				entryPoints: [path],
-	// 				minify: true,
-	// 				bundle: true,
-	// 				write: false,
-	// 			});
-
-	// 			return outputFiles[0].text;
-	// 		};
-	// 	},
-	// });
-
 	// XML minification
 
 	config.addTransform('xmlMin', (content, path) => {
@@ -184,41 +137,11 @@ module.exports = (config) => {
 		});
 	});
 
-	// // Dates
-
-	// config.addFilter('dateLong', (value) => {
-	// 	return value.toLocaleString('en', {
-	// 		dateStyle: 'long',
-	// 	});
-	// });
-
-	// config.addFilter('dateShort', (value) => {
-	// 	const articleYear = value.getFullYear();
-	// 	const currentYear = new Date().getFullYear();
-	// 	const dateFormat = articleYear < currentYear
-	// 		? {
-	// 			dateStyle: 'long',
-	// 		}
-	// 		: {
-	// 			month: 'long',
-	// 			day: 'numeric',
-	// 		};
-
-	// 	return value.toLocaleString('en', dateFormat);
-	// });
-
-	// config.addFilter('dateISO', (value) => {
-	// 	return value.toISOString().split('T')[0];
-	// });
-
 	// Passthrough copy
 
 	[
-		// 'src/robots.txt',
 		'src/img',
 		'src/fonts',
-		// 'src/talks',
-		// 'src/articles/**/*.!(md|yml)',
 	].forEach((path) => config.addPassthroughCopy(path));
 
 	// Plugins
