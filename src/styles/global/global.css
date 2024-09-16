@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  position: relative;
+
+  background-color: #fff;
+  color: #666666;
+}
+
+body {
+  font-family: "Mont", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  overflow-wrap: anywhere;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  min-width: 320px;
+}
+
+.semantic-only {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.img-responsive-w {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.img-responsive-h {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,114 @@
+.diagram-steps {
+  grid-row: span 3;
+  justify-self: end;
+  padding: 8px;
+  display: grid;
+  grid-gap: 6px;
+  border-radius: 100px;
+  background: #fff;
+  justify-self: center;
+}
+
+.step-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b3b3b3;
+}
+
+.step-arrow__column-small {
+  width: 8px;
+  height: 26px;
+}
+.step-arrow__column {
+  width: 8px;
+  height: 74px;
+}
+.step-arrow__row {
+  width: 280px;
+  height: 12px;
+  display: none;
+}
+
+.step-round-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.step__arrow {
+  fill: red;
+  width: 80px;
+  height: 260px;
+  color: red;
+  display: block;
+}
+
+@media screen and (min-width: 420px) {
+  .diagram-steps {
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .diagram-steps {
+    grid-gap: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .diagram-steps {
+    grid-row: unset;
+    grid-template-columns: repeat(5, auto);
+    grid-column: span 3;
+    grid-gap: 12px;
+    justify-items: center;
+    align-items: center;
+    padding: 12px;
+    justify-self: center;
+    margin: 0;
+  }
+  .step-arrow__row {
+    display: block;
+  }
+  .step-arrow__column-small,
+  .step-arrow__column {
+    display: none;
+  }
+  .step-arrow {
+    width: 160px;
+    height: 6px;
+  }
+  .step-round-icon {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .diagram-steps {
+    grid-template-columns: repeat(5, auto);
+    grid-column: span 3;
+    grid-gap: 16px;
+    height: 120px;
+    align-items: center;
+    padding: 16px;
+    justify-self: center;
+    margin: 0;
+  }
+  .step-arrow {
+    width: 280px;
+    height: 12px;
+    padding-bottom: 5px;
+  }
+  .step-round-icon {
+    width: 88px;
+    height: 88px;
+  }
+  .step-arrow__row {
+    display: block;
+  }
+  .step-arrow__column-small,
+  .step-arrow__column {
+    display: none;
+  }
+}

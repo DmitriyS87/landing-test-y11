@@ -1,0 +1,73 @@
+.expand__trigger {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 4px;
+}
+
+.expand__trigger::before {
+  content: "";
+  margin-top: 5px;
+  background-image: url("../img/icons.svg#plus");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  transition: background 0.3s ease;
+}
+
+.expand__trigger::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-image: url("../img/line_7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .expand__trigger::after {
+    background-image: url("../img/line_7@2x.png"); /* High-resolution 2x image */
+  }
+}
+
+.expand[open] .expand__trigger::after {
+  bottom: 0;
+}
+
+.expand[open] .expand__trigger {
+  padding-bottom: 0;
+}
+
+.expand[open] .expand__trigger::before {
+  background-image: url("../img/icons.svg#minus");
+}
+
+@media screen and (min-width: 1280px) {
+  .expand__trigger {
+    padding-bottom: 24px;
+    align-items: center;
+  }
+  .expand__trigger::after {
+    bottom: 0;
+  }
+  .expand__trigger::before {
+    margin-left: 16px;
+    width: 32px;
+    height: 32px;
+    margin-top: 0;
+  }
+  .expand[open] .expand__trigger {
+    padding-bottom: 8px;
+  }
+}

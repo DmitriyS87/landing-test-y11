@@ -1,0 +1,156 @@
+.card {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  padding-bottom: 32px;
+}
+
+.card__media {
+  width: 280px;
+  height: 157.5px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px 16px 0 0;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.card__header {
+  color: #111111;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.card__text {
+  text-align: center;
+  color: #606264;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.card-face-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(../../img/award_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 112px;
+
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.card-face-image--education {
+  background: url(../../img/sell-buy-education.png) transparent 50% / cover
+    no-repeat;
+  width: 133.663px;
+  height: 93.831px;
+  left: 66%;
+  top: 51.6%;
+}
+
+.card-face-image--protection {
+  background: url(../../img/shield.png) transparent 50% / cover no-repeat;
+  width: 58.803px;
+  height: 60.367px;
+  left: 72.3%;
+  top: 50%;
+}
+
+@media screen and (min-width: 620px) {
+  .card:last-child {
+    grid-column: 1 / 3;
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-wrap: wrap;
+    width: 320px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+  .card__media {
+    border-radius: 16px;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .card {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    padding: 24px;
+    gap: 32px;
+  }
+  .card:last-child {
+    grid-column: unset;
+    justify-self: unset;
+  }
+  .card--reverse {
+    flex-direction: row-reverse;
+  }
+  .card__media {
+    width: 320px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+  .card-face-image {
+    height: 130px;
+  }
+  .card-face-image--education {
+    width: 152.774px;
+    height: 107.247px;
+  }
+  .card-face-image--protection {
+    width: 70.276px;
+    height: 80.342px;
+  }
+  .card__content {
+    align-items: flex-start;
+    gap: 32px;
+    padding: 0;
+  }
+  .card__header {
+    text-align: left;
+    font-size: 28px;
+    line-height: 36px; /* 128.571% */
+    letter-spacing: -0.1px;
+    word-spacing: -0.5px;
+  }
+  .card__text {
+    color: #666;
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    padding: 48px 44px;
+    border-radius: 40px;
+  }
+}

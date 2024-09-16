@@ -1,0 +1,21 @@
+### html
+
+have to prepare images for picture, scale, format and can i use check
+
+# check other browsers
+
+# BACKLOG
+
+## images 1x 2x and 4x formats (webp, png, jpeg)
+## check all alt contents
+## have to decide witch images are neither content nor additional
+## font loading (ask original)
+## bundle, minify, postcss
+
+## finish desktop design:
+## intro image block right (performance)
+## platform put images on video (check deep styling)
+## new solution vs <br />
+## clear BEM notations
+## use variables names from design
+## check svg ability to switch on air

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-Hairline.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-HairlineItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-HeavyItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont Trial";
+  src: url("../../fonts/Mont trail/Mont-Trial-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}

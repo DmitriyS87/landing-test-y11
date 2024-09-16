@@ -1,0 +1,51 @@
+.link-button {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.54px;
+
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  padding: 16px 0 14px;
+
+  border-radius: 100px;
+  border: 0;
+  background: #ff6633;
+  color: #ffffff;
+
+  font-weight: 800;
+  text-align: center;
+}
+
+.link-button-text {
+  display: block;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .link-button {
+    font-size: 22px;
+    line-height: 24px;
+    padding: 20px 0 18px;
+    letter-spacing: 0.04px;
+  }
+}
+
+
+.link-button--header {
+  width: 227px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  border: 2px solid #f63;
+
+  font-size: 18px;
+  line-height: 18px;
+
+  color: #ff6633;
+  background: transparent;
+  margin-bottom: 6px;
+}
+
+.link-button--platform {
+  margin-bottom: 10px;
+}
