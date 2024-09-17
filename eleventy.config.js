@@ -156,5 +156,6 @@ module.exports = (config) => {
 		markdownTemplateEngine: 'njk',
 		htmlTemplateEngine: 'njk',
 		templateFormats: ['md', 'njk'],
+    pathPrefix: "/landing-test-y11/",
 	};
 };
