@@ -7,7 +7,8 @@
     "html": "w3c-html-validator dist --ignore-config=.validator",
     "css": "stylelint \"src/styles/**/*.css\"",
     "javascript": "eslint eleventy.config.js src/**/*.js",
-    "build-ghpages": "gh-pages -d dist"
+    "build-ghpages": "gh-pages -d dist",
+    "postbuild": "node postbuild/index.js"
   },
   "engines": {
     "node": "20"
