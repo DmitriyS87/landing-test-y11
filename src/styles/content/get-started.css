@@ -37,8 +37,6 @@
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
   .get-started__steps {
     display: grid;
@@ -46,9 +44,6 @@
     justify-content: center;
     grid-gap: 20px 40px;
   }
-}
-
-@media screen and (min-width: 840px) {
 }
 
 @media screen and (min-width: 1024px) {
