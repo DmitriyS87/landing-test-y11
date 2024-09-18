@@ -20,6 +20,7 @@
   .button-description {
     font-size: 14px;
     line-height: 14px;
+    letter-spacing: -.03px;
   }
 }
 

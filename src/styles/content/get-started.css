@@ -86,7 +86,7 @@
   .get-started__steps {
     display: grid;
     grid-template: repeat(2, auto) / repeat(3, 372px);
-    grid-gap: 24px 30px;
+    grid-gap: 20px 30px;
     justify-content: center;
   }
 }

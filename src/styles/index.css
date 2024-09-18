@@ -3,13 +3,14 @@
 @import url("global/global.css");
 @import url("header.css");
 
+@import url("components/button-description.css");
+@import url("components/link-button.css");
+@import url("components/card.css");
+@import url("components/expand.css");
+
 @import url("components/block.css");
 @import url("content/intro.css");
 @import url("content/get-started.css");
 @import url("content/platform.css");
 @import url("content/faq.css");
 
-@import url("components/button-description.css");
-@import url("components/link-button.css");
-@import url("components/card.css");
-@import url("components/expand.css");

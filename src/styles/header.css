@@ -110,7 +110,7 @@
     line-height: 20px;
     place-self: center;
     letter-spacing: 0.1px;
-    padding-right: 7px;
+    padding: 0 7px 2px 0;
   }
 }
 

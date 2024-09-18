@@ -28,12 +28,11 @@
 }
 
 .step-title-text {
-  flex-basis: 90%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  letter-spacing: -.04px;
-  word-spacing: .8px;
+  letter-spacing: -0.04px;
+  word-spacing: 0.8px;
 }
 
 .steps-info__text {
@@ -100,18 +99,24 @@
     justify-content: flex-start;
   }
   .steps-info__title {
-    padding: 0 0 0 10px;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.2px;
     word-spacing: 1px;
+    justify-content: center;
   }
   .steps-info__text {
     text-align: center;
     font-size: 16px;
     line-height: 22px;
     width: auto;
+  }
+  .step-title-number {
+    text-align: center;
+  }
+  .step-title-text {
+    letter-spacing: -.2px;
   }
 }

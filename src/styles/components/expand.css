@@ -59,7 +59,7 @@
     align-items: center;
   }
   .expand__trigger::after {
-    bottom: 0;
+    bottom: -2px;
   }
   .expand__trigger::before {
     margin-left: 16px;
@@ -69,5 +69,8 @@
   }
   .expand[open] .expand__trigger {
     padding-bottom: 8px;
+  }
+  .expand[open] .expand__trigger::after {
+    bottom: -3px;
   }
 }
