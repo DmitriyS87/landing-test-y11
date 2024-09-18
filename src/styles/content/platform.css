@@ -1,7 +1,7 @@
 .platform {
   display: grid;
   justify-items: center;
-  padding: 42px 0 38px;
+  padding: 38px 0;
 }
 
 .platform__header {

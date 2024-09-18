@@ -15,13 +15,13 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.24px;
-  margin: 0 0 40px 0;
+  margin: 0 0 41px 0;
 }
 
 .get-started__steps {
   display: grid;
   grid-template: repeat(3, auto) / repeat(2, auto);
-  grid-gap: 14px;
+  grid-gap: 15px 13px;
   align-items: start;
 }
 

@@ -1,5 +1,6 @@
 .steps-info {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -15,7 +16,24 @@
   text-align: left;
   margin: 0;
   padding: 0;
-  padding: 5px 0 0 7px;
+  padding: 3px 0 0 7px;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  gap: 0;
+}
+
+.step-title-number {
+  flex-basis: 10%;
+}
+
+.step-title-text {
+  flex-basis: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: -.04px;
+  word-spacing: .8px;
 }
 
 .steps-info__text {
