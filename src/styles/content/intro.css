@@ -155,12 +155,13 @@
   .intro {
     flex-direction: row;
     justify-content: center;
+    align-items: end;
   }
   .intro-bg-overlay {
     clip-path: polygon(100% 0%, 100% 100%, 47.2% 100%, 69% 0);
   }
   .intro__info {
-    padding-top: 46px;
+    padding: 46px 0;
     text-align: left;
     justify-items: start;
   }
@@ -173,7 +174,7 @@
     margin: 0 0 38px;
   }
   .intro-img {
-    transform: scale(1) translate(0, 4px);
+    transform: scale(1.1) translateY(-12px);
   }
   .intro__img {
     padding-right: 34px;
@@ -187,7 +188,7 @@
     justify-content: space-between;
   }
   .intro__info {
-    padding-top: 46px;
+    padding: 46px;
     text-align: center;
     justify-items: center;
   }
@@ -204,6 +205,7 @@
   }
 
   .intro__img {
+    transform: scale(1) translate(0, 4px);
     padding-right: 34px;
     height: auto;
   }
